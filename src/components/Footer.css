@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#foot{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+}
+#footlogo{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footicons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;    
+    align-items: center;
+}
+#address{
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: large;
+    width: 30vw;
+}
+.mapouter{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gmap_canvas{
+    width: 90%;
+    height: 90%;
+}

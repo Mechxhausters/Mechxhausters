@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+.main{
+    background-color: #202124;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    /* border-bottom: 8px red solid; */
+}
+.imgmain{
+    width: 100vw;
+    /* background-image:url('../../images/IMG_5505.jpg'); */
+    background-image: url('https://altairuniversity.com/wp-content/uploads/2020/09/f2019-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    filter: brightness(20%);
+}
+.centertext{
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    position: absolute;
+    display: flex;
+}
+.imgleft{
+    width: 40vw;
+    /* height: 40vh; */
+    display: flex;
+    /* padding: 0 30px; */
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.imglef{
+    width:25vw;
+    animation: moveleft 0.5s linear 1s forwards;
+    opacity: 0;
+    transform: translateX(40px);
+}
+.verline{
+    background-color: red;
+    width: 5px;
+    height: 40vh;
+    animation-name: moveup;
+    animation-duration: 1s;
+    margin: 0 30px;
+}
+.txt{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    width: 40vw;
+    height: 40vh;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+    overflow: hidden;
+}
+.txtin{
+    letter-spacing: 4px;
+    color: white;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: moveright 0.5s linear 1s forwards;
+}
+@keyframes moveup {
+    0%   {height: 10vh;}
+    100% {height: 40vh;}
+}
+@keyframes moveleft {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveright {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
