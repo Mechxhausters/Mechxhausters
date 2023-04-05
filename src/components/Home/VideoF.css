@@ -6,3 +6,8 @@
     flex-direction: column;
     font-weight: bold;
 }
+.total{
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}

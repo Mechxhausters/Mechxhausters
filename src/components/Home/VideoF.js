@@ -8,8 +8,6 @@ const VideoF = () => {
         "display":"flex",
         "flexDirection":"column",
         "alignItems":"center",
-        "backgroundSize":"cover",
-        "backgroundRepeat":"no-repeat",
         "backgroundPosition":"center",
         "background":"url("+process.env.PUBLIC_URL+'/bgvid.jpeg',
         "borderTop":"4px red solid"

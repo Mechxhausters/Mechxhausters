@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar.css'
 // import logo from '../mechx.png'
 import logo from '../images/Mechx_WT.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -13,13 +13,13 @@ const Navbar = () => {
             </div>
             <div className="ulitems">
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/car">The Car</Link></li>
-                    <li><Link to="/team">The Team</Link></li>
-                    <li><Link to="/gallery">Gallery</Link></li>
-                    <li><Link to="/sponsers">Sponsors</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/car">The Car</NavLink></li>
+                    <li><NavLink to="/team">The Team</NavLink></li>
+                    <li><NavLink to="/gallery">Gallery</NavLink></li>
+                    <li><NavLink to="/sponsers">Sponsors</NavLink></li>
+                    <li><NavLink to="/about">About Us</NavLink></li>
+                    <li><NavLink to="/contact">Contact Us</NavLink></li>
                 </ul>
             </div>
         </header>
